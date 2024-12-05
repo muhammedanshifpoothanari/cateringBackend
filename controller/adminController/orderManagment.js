@@ -3,6 +3,7 @@ const Order = require('../../models/order');
 
 const createOrder = async (req, res) => {
     try {
+        console.log(req.body,'kbhhgfcgfgchgfhfdrfcdse');
         if(!req.body) throw new Error('please fill all the input fields.');
         if(!req.body.customerName) throw new Error('please fill the customer name field.');
         if(!req.body.companyName) throw new Error('please fill the company name field.');

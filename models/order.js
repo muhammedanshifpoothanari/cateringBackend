@@ -44,9 +44,12 @@ const orderSchema = new mongoose.Schema({
                type: String,
                required: true
            },
-           itemTypes: {
+           itemType: {
                type: String,
            },
+           itemUnit:{
+            type: String,
+        },
            itemPrice: {
                type: Number,
            },
